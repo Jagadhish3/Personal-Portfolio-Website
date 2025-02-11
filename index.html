@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/dcba4a5a43.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <!-- <img src="images/logo.png" class="logo"> -->
+                <h2 class="logo">My Portfolio</h2>
+
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li> 
+                    <li><a href="#about">About</a></li> 
+                    <li><a href="#services">Services</a></li> 
+                    <li><a href="#portfolio">Portfolio</a></li> 
+                    <li><a href="#contact">contact</a></li> 
+                    <i class="fa-regular fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <!-- <div class="header-text">
+                <p>Machine Learning Engineer</p>
+                <h1>Hi, I'am <span>Jagadhish</span><br>From India</h1>
+            </div> -->
+            <div class="header-text">
+                <p>Machine Learning Engineer</p>
+                <h1>Hi, I'm <span id="animated-name"></span><br>From India</h1>
+            </div>
+            
+        </div>
+    </div>
+<!--------about--------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                <p>I am an enthusiastic Computer Science and Engineering undergraduate, 
+                specializing in Machine Learning and DevOps. With a strong foundation 
+                in Data Structures and Algorithms, I am passionate about building efficient, 
+                scalable, and innovative solutions to complex problems.My academic journey has 
+                equipped me with the technical expertise and problem-solving skills necessary 
+                for tackling real-world challenges. Whether it's optimizing system performance,
+                automating workflows, or developing intelligent models, I thrive in environments 
+                where technology and innovation drive impact.</p>
+                     <!-- <p class="typing-container"></p> 
+    <span class="cursor"></span> -->
+                     <div class="tab-title">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                     </div>
+                     <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Programming Languages</span><br>C, C++, Java, Python</li>
+                            <li><span>Technologies</span><br>Python Libraries, ML Algorithms, Git, GitHub</li>
+                            <li><span>Soft Skills</span><br>Problem-Solving Skills, Team Player</li>
+                        </ul>
+                     </div>
+                     <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>September 2024 - October 2024</span><br>Machine Learning Intern in Academor.</li>
+                            <!-- <li><span>June 2024 - July 2024</span><br>Complete Interview Preparation Training in geeksforgeeks</li> -->
+                            </ul>
+                     </div>
+                     <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2022-Present</span><br>BTech Computer Science and Engineering at LPU</li>
+                            <li><span>2020-2022</span><br>Intermediate at Sasi Junior College</li>
+                            <li><span>2019-2020</span><br>SSC at Sasi English Medium High School</li>
+                        </ul>
+                     </div>
+                </div>
+        </div>
+    </div>
+    </div>
+
+    <!-----------services------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Certificates</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Cloud Computing</h2>
+                    <p>NPTEL Cloud Computing course, gaining in-depth knowledge of cloud service models, 
+                        virtualization, resource management, and security. This certification reflects my 
+                        proficiency in designing and implementing scalable cloud solutions.</p>
+                        <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-hexagon-nodes"></i>
+                    <h2>Complete Interview Preparation</h2>
+                    <p>Successfully completed the CIP (Career Intensive Program) training from GeeksforGeeks, 
+                        gaining hands-on experience in Data Structures, Algorithms, System Design, and industry-relevant problem-solving techniques. 
+                        This training has strengthened my coding skills and prepared me for technical interviews.</p>
+                        <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>Machine Learning</h2>
+                    <p>Successfully completed the Machine Learning course from EdVedha, gaining in-depth knowledge of key
+                         ML concepts, algorithms, and real-world applications. This course enhanced my skills in data preprocessing, model building, 
+                        and evaluation, strengthening my expertise in the field of artificial intelligence.</p>
+                        <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!---------portfolio--------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My work</h1>
+            <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>Pos Tagging And Spell Checking</h3>
+                    <p>Developed an NLP model integrating BiLSTM for POS tagging and probabilistic spellchecking.</p>
+                    <a href="https://github.com/Jagadhish3/POS-Tagging-and-Spell-Checking"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>Customer Segmentation</h3>
+                    <p>Developed a customer segmentation model using Python, Scikit-learn, and Pandas, improving targeted marketing efficiency by identifying high-value customer groups.</p>
+                    <a href="https://github.com/Jagadhish3/Acadomor-Internship-online-"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>Movie Recommendation System</h3>
+                    <p>Built a machine learning-based movie recommendation system, leveraging Gaussian Naïve Bayes, Logistic Regression, Decision Tree, and Random Forest.</p>
+                    <a href="https://github.com/Jagadhish3/Movie-Recommendation-System"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+
+<!-----contact------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p> <i class="fa-regular fa-envelope"></i>kethajagadhish123@gmail.com</p>
+                <p>  <i class="fa-solid fa-phone"></i>7569494509</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/jagadhishketha/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/jaga_dhish3/?hl=en"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://x.com/Jagadhish_ketha"><i class="fa-brands fa-twitter-square"></i></a>
+                    <a href="https://www.facebook.com/share/1BYTqRuVds/"><i class="fa-brands fa-facebook"></i></a>
+                </div>
+                <a href="images/my-cv.pdf" Download class="btn btn2">Download cv</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message" ></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright @ Jagadhish. Made with <i class="fa-solid fa-heart"></i> from tutorials</p>
+    </div>  
+</div>
+    <script>
+        var tablinks=document.getElementsByClassName("tab-links");
+        var tabcontents=document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link")
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab")
+            }
+
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+        
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxAq4GE4dP2vJyN4demmJOIyklVgwk4XfDp3EE1UaMGNC9grHoDNq6iyOd_Lx5v7HyB6Q/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response =>{
+                msg.innerHTML="Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+      <script>
+        const nameElement = document.getElementById("animated-name");
+        const nameText = "Jagadhish";
+        let index = 0;
+    
+        function typeEffect() {
+            if (index <= nameText.length) {
+                nameElement.innerHTML = nameText.slice(0, index);
+                index++;
+                setTimeout(typeEffect, 150); // Faster typing speed (150ms per letter)
+            } else {
+                setTimeout(() => {
+                    index = 0; // Restart animation
+                    typeEffect();
+                }, 1000); // 1s pause before restart
+            }
+        }
+    
+        typeEffect();
+    </script>
+    
+   
+    
+    
+    
+    
+</body>
+</html>
